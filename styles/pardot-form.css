@@ -63,6 +63,7 @@
     margin-bottom: 2px !important;
     font-size: var(--form-labels-text-size);
     font-weight:normal;
+    width: fit-content;
 }
 #pardot-form p.form-field {
     margin-bottom: 0;
