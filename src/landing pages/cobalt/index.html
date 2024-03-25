@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"><title></title><meta name="description" content="Testing out Landing Pages"><link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,700,700i%7CSintony:400,700" rel="stylesheet"><!-- Bootstrap CSS --><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"><style type="text/css">
+      /* --------------------------
+
+EDIT THE VALUES BELOW TO UPDATE 
+THE TEMPLATE TO MEET YOUR BRAND GUIDELINES
+
+--------------------------*/
+ ul.custom-boxed-list {
+      list-style-type: none; /* Removes default list styling */
+      padding: 0;
+      margin: 0; /* Adjust margin as needed */
+    }
+
+    ul.custom-boxed-list li {
+      background-color: #f2f3f4; /* Light gray background */
+      border: 1px solid #dcdcdc; /* Light gray border */
+      margin-bottom: 10px; /* Space between items */
+      padding: 10px; /* Padding inside each box */
+      border-radius: 5px; /* Optional: adds rounded corners to each box */
+      font-weight: bold; /* Makes the text bold */
+      color: #333; /* Dark text for better readability */
+    }
+:root {
+  /* ---- Page Options ---- */
+  --hero-bg-color: #2170AF; /* Lighter Blue */
+  --page-bg-color: #F2F3F4; /* Light Gray for Page Background */
+  --footer-bg-color: #FFF; /* Keeping footer white for contrast */
+
+  /* ---- Main text options ---- */
+  --main-text-color: #5D6D7E; /* Darker Gray for Text */
+  --main-font-family: 'Poppins', sans-serif;
+  --main-text-font-size: 16px;
+  --main-text-line-height: 28px;
+  
+
+  /* ---- Header text options ---- */
+  --heading-font-family: 'Sintony', sans-serif;;
+  --heading-1-text-color: #2170AF; /* Lighter Blue for Heading 1 */
+  --heading-1-text-size: 35px;
+  --heading-1-line-height: 45px;
+  --heading-2-text-color: #2170AF; /* Lighter Blue for Heading 2, adjust if needed */
+  --heading-2-text-size: 25px;
+  --heading-2-line-height: 35px;
+  --heading-3-text-color: #FFF; /* Keeping white for contrast */
+  --heading-3-text-size: 20px;
+  --heading-3-line-height: 28px;
+
+
+  /* ---- Form options ---- */
+  --form-bg-color: #FFF; /* White Background for Form */
+  --form-header-bg-color: #5D6D7E; /* Lighter Blue for Form Header */
+
+  /* input field settings */
+  --form-input-fields-bg-color: #FFF; /* White Background for Input Fields */
+  --form-input-fields-border-color: #BFC9CA; /* Light Gray for Input Field Borders */
+  --form-input-fields-text-color: #5D6D7E; /* Darker Gray for Input Text */
+
+  /* submit button settings */
+  --form-submit-button-bg-color: #2170AF; /* Lighter Blue for Submit Button */
+  --form-submit-button-font-color: #FFF; /* White Text for Button */
+  --form-submit-button-font-size: 16px;
+
+  /* checkbox settings */
+  --form-checkbox-bg-color: #2170AF; /* Lighter Blue for Checkbox */
+  --form-checkbox-border-color: #2170AF; /* Lighter Blue for Checkbox Border */
+
+  /* radio button settings */
+  --form-radio-circle-color: #2170AF; /* Lighter Blue for Radio Circle */
+  --form-radio-border-color: #2170AF; /* Lighter Blue for Radio Border */
+
+  /* field label settings */
+  --form-label-text-color: #5D6D7E; /* Darker Gray for Label Text */
+  --form-labels-text-size: 15px;
+}
+
+/* --------------------------
+
+WARNING: EDITING THE BELOW CSS MIGHT
+BREAK THE TEMPLATE
+
+--------------------------*/
+
+body {
+  font-family: var(--main-font-family);
+  color: var(--main-text-color);
+  font-size: var(--main-text-font-size);
+  line-height: var(--main-text-line-height);
+  background-color: var(--hero-bg-color);
+}
+.page-body {
+  background-color:var(--page-bg-color);
+}
+
+h1, h2, h3 {
+font-family:var(--heading-font-family);
+}
+h1 {
+  color: var(--heading-1-text-color);
+  font-size: var(--heading-1-text-size);
+  line-height: var(--heading-1-line-height);
+  margin: 0;
+}
+h2 {
+  color: var(--heading-2-text-color);
+  font-size: var(--heading-2-text-size);
+  line-height: var(--heading-2-line-height);
+  font-weight: normal;
+  margin: 0;
+}
+h3 {
+  color: var(--heading-3-text-color);
+  font-size: var(--heading-3-text-size);
+  line-height: var(--heading-3-line-height);
+  margin: 0;
+}
+
+/* Hero background color */
+.highlight {
+  background-color: var(--hero-bg-color);
+}
+
+
+/* --------------------------
+
+WARNING: EDITING THE BELOW CSS MIGHT
+BREAK THE TEMPLATE. 
+
+--------------------------*/
+.highlight {
+  padding: 50px 0;
+}
+.logo {
+  padding: 0 0 50px 0;
+}
+.header {
+  padding: 20px 10px;
+}
+.headline {
+  padding: 0 0 15px 0;
+}
+.description {
+  color: #FFF;
+  font-size: 15px;
+}
+.page-body {
+  padding: 35px 0;
+}
+.page-body h3 {
+  padding-bottom: 10px;
+}
+.form-container {
+  position: relative;
+}
+.form-container-inner {
+  position: absolute;
+  top: 50px;
+}
+.form-header {
+  padding: 10px;
+  text-align: center;
+  background-color: var(--form-header-bg-color);
+}
+.footer {
+  padding: 35px 0 30px 0;
+  font-size: 11px;
+  color: #9E9E9E;
+  line-height: 18px;
+  background-color: var(--footer-bg-color);
+}
+.footer .border-top {
+  border-top: solid 1px #E0E0E0;
+  padding-top: 20px;
+}
+ul.social {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+ul.social li {
+display: inline-block;
+padding: 5px;
+}
+ul.social i {
+color: #9E9E9E;
+font-size: 30px;
+}
+.asset-image img {
+  width: 100%;
+}
+.desktop-hide {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  ul.social {
+    text-align: center !important;
+  }
+  .copyright {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  form.form input[type=submit] {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 12px;
+  }
+  h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .headline {
+    padding-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 668px) {
+  .asset-image {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  .asset-image img {
+    max-width: 300px;
+  }
+  .headline-container {
+    width: 90%;
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+  }
+  .logo {
+    text-align: center;
+  }
+  .form-position {
+    padding-bottom:50px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .form-container, .form-container-inner {
+    position: static;
+  }
+  .form-container {
+    padding-top: 25px;
+  }
+}
+
+/* Pardot Form Styles */
+#pardot-form {
+  padding: 20px;
+  font-family: var(--main-font-family);
+  background-color: var(--form-bg-color);
+  margin-top:0;
+}
+#pardot-form p label {
+  color: var(--form-label-text-color) !important;
+  margin-bottom: 2px !important;
+  font-size: var(--form-labels-text-size);
+  font-weight:normal;
+}
+#pardot-form p.form-field {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+#pardot-form input[type=text], #pardot-form textarea {
+  width: 100%;
+  border: solid 1px var(--form-input-fields-border-color);
+  background-color: var(--form-input-fields-bg-color);
+  padding: 5px 10px !important;
+  font-size: 15px;
+  color: var(--form-input-fields-text-color);
+}
+#pardot-form input[type=text]:focus, #pardot-form textarea:focus, #pardot-form select:focus {
+  outline: none;
+}
+#pardot-form input[type=submit] {
+  background-color: var(--form-submit-button-bg-color);
+  border: 0;
+  color: var(--form-submit-button-font-color);
+  font-size: var(--form-submit-button-font-size);
+  padding: 10px 30px;
+  width: 100%;
+  margin-top: 20px;
+}
+#pardot-form p.submit {
+  text-align: center;
+  margin-right: 0;
+  margin-left: 0;
+}
+#pardot-form label.inline {
+  padding-left: 0;
+  font-size: var(--form-labels-text-size);
+}
+#pardot-form textarea {
+  height: 75px;
+}
+#pardot-form select {
+  width: 100%;
+  border: solid 1px var(--form-input-fields-border-color);
+  background-color: var(--form-input-fields-bg-color);
+  padding: 5px 10px !important;
+  font-size: 15px;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearancce: none;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 1ex;
+  background-origin: content-box;
+  color: var(--form-input-fields-text-color);
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMiIKICAgdmlld0JveD0iMCAwIDM1Ljk3MDk4MyAyMy4wOTE1MTgiCiAgIGhlaWdodD0iNi41MTY5Mzk2bW0iCiAgIHdpZHRoPSIxMC4xNTE4MTFtbSI+CiAgPGRlZnMKICAgICBpZD0iZGVmczQiIC8+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhNyI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2Uvc3ZnK3htbDwvZGM6Zm9ybWF0PgogICAgICAgIDxkYzp0eXBlCiAgICAgICAgICAgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIgLz4KICAgICAgICA8ZGM6dGl0bGU+PC9kYzp0aXRsZT4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPGcKICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjAyLjAxNDUxLC00MDcuMTIyMjUpIgogICAgIGlkPSJsYXllcjEiPgogICAgPHRleHQKICAgICAgIGlkPSJ0ZXh0MzMzNiIKICAgICAgIHk9IjYyOS41MDUwNyIKICAgICAgIHg9IjI5MS40Mjg1NiIKICAgICAgIHN0eWxlPSJmb250LXN0eWxlOm5vcm1hbDtmb250LXdlaWdodDpub3JtYWw7Zm9udC1zaXplOjQwcHg7bGluZS1oZWlnaHQ6MTI1JTtmb250LWZhbWlseTpzYW5zLXNlcmlmO2xldHRlci1zcGFjaW5nOjBweDt3b3JkLXNwYWNpbmc6MHB4O2ZpbGw6IzAwMDAwMDtmaWxsLW9wYWNpdHk6MTtzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6MXB4O3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICB4bWw6c3BhY2U9InByZXNlcnZlIj48dHNwYW4KICAgICAgICAgeT0iNjI5LjUwNTA3IgogICAgICAgICB4PSIyOTEuNDI4NTYiCiAgICAgICAgIGlkPSJ0c3BhbjMzMzgiPjwvdHNwYW4+PC90ZXh0PgogICAgPGcKICAgICAgIGlkPSJ0ZXh0MzM0MCIKICAgICAgIHN0eWxlPSJmb250LXN0eWxlOm5vcm1hbDtmb250LXZhcmlhbnQ6bm9ybWFsO2ZvbnQtd2VpZ2h0Om5vcm1hbDtmb250LXN0cmV0Y2g6bm9ybWFsO2ZvbnQtc2l6ZTo0MHB4O2xpbmUtaGVpZ2h0OjEyNSU7Zm9udC1mYW1pbHk6Rm9udEF3ZXNvbWU7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpGb250QXdlc29tZTtsZXR0ZXItc3BhY2luZzowcHg7d29yZC1zcGFjaW5nOjBweDtmaWxsOiMwMDAwMDA7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjFweDtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2Utb3BhY2l0eToxIj4KICAgICAgPHBhdGgKICAgICAgICAgaWQ9InBhdGgzMzQ1IgogICAgICAgICBzdHlsZT0iZmlsbDojMzMzMzMzO2ZpbGwtb3BhY2l0eToxIgogICAgICAgICBkPSJtIDIzNy41NjY5Niw0MTMuMjU1MDcgYyAwLjU1ODA0LC0wLjU1ODA0IDAuNTU4MDQsLTEuNDczMjIgMCwtMi4wMzEyNSBsIC0zLjcwNTM1LC0zLjY4MzA0IGMgLTAuNTU4MDQsLTAuNTU4MDQgLTEuNDUwOSwtMC41NTgwNCAtMi4wMDg5MywwIEwgMjIwLDQxOS4zOTM0NiAyMDguMTQ3MzIsNDA3LjU0MDc4IGMgLTAuNTU4MDMsLTAuNTU4MDQgLTEuNDUwODksLTAuNTU4MDQgLTIuMDA4OTMsMCBsIC0zLjcwNTM1LDMuNjgzMDQgYyAtMC41NTgwNCwwLjU1ODAzIC0wLjU1ODA0LDEuNDczMjEgMCwyLjAzMTI1IGwgMTYuNTYyNSwxNi41NDAxNyBjIDAuNTU4MDMsMC41NTgwNCAxLjQ1MDg5LDAuNTU4MDQgMi4wMDg5MiwwIGwgMTYuNTYyNSwtMTYuNTQwMTcgeiIgLz4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo=");
+}
+/* hide the regular checkbox */
+
+#pardot-form .pd-checkbox input {
+  opacity: 0;
+  position: absolute;
+}
+/* position the label */
+
+#pardot-form .pd-checkbox input, #pardot-form .pd-checkbox label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+}
+#pardot-form .pd-checkbox label {
+  position: relative;
+}
+/* style the unchecked checkbox */
+
+#pardot-form .pd-checkbox input+label:before {
+  content: '';
+  background: #fff;
+  border: 2px solid #ddd;
+  display: inline-block;
+  vertical-align: left;
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+  margin-right: 10px;
+  text-align: left;
+  font-size: 15px;
+  line-height: 18px;
+}
+/* style the checked checkbox */
+
+#pardot-form .pd-checkbox input:checked+label:before {
+  content: "\2713";
+  background: var(--form-checkbox-bg-color);
+  color: #fff;
+  border-color: var(--form-checkbox-border-color);
+}
+/* hide the regular radio button */
+
+#pardot-form .pd-radio input {
+  opacity: 0;
+  position: absolute;
+}
+/* position the label */
+
+#pardot-form .pd-radio input, .pd-radio label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+}
+#pardot-form .pd-radio label {
+  position: relative;
+}
+/* style the unchecked radio button */
+
+#pardot-form .pd-radio input+label:before {
+  content: "";
+  background: #fff;
+  border: 2px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+  line-height: 16px;
+  margin-right: 10px;
+  text-align: left;
+  font-size: 20px;
+}
+#pardot-form .pd-radio input+label:before {
+  border-radius: 50%;
+}
+/* style the selected radio button */
+
+#pardot-form .pd-radio input:checked+label:before {
+  content: "\25CF";
+  color: var(--form-radio-circle-color);
+  border: solid 1px var(--form-radio-border-color);
+}
+#pardot-form p.error {
+  margin-left: 0;
+  margin-top: 0;
+  font-size: 12px;
+}
+  </style><script type="text/javascript" src="https://go.surgicallycleanair.com/js/piUtils.js?ver=2021-09-20"></script><script type="text/javascript">
+piAId = '1008272';
+piCId = '127243';
+piHostname = 'go.surgicallycleanair.com';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + piHostname + '/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script></head><body>
+  <div id="insert-form"></div>
+  
+  <div class="highlight">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="logo" id="logo" pardot-region="Logo" data-id="61965" data-hml-enabled="1"><p><img alt="" border="0" height="75" src="https://go.surgicallycleanair.com/l/1007272/2023-09-06/44524y/1007272/16940279492VE4lOQj/SCA_Logo_PNG_Transparent__1_.png" style="width: 350px; height: 75px; border-width: 0px; border-style: solid;" width="350"></p></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4 asset-image" id="asset-image" pardot-region="Image" data-id="61968" data-hml-enabled="1"><p><img alt="" border="0" height="168" src="https://go.surgicallycleanair.com/l/1007272/2024-02-21/44fsrt/1007272/1708526565RYBgOERw/Cobalt_2x2_and_2x4.png" style="width: 250px; height: 168px; border-width: 0px; border-style: solid;" width="250"></p></div>
+            <div class="col-xs-8 headline-container">
+              <div class="headline" id="heading" pardot-region="Heading" data-id="61971" data-hml-enabled="1"><h1><span style="color:#ffffff;">Surgically Clean Air's COBALT</span></h1></div>
+              <div class="description" id="header-text" pardot-region="Header Text" data-id="61977" data-hml-enabled="1"><ul class="custom-boxed-list"><li>Whisper Quiet</li>
+	<li>Moves a lot of air</li>
+	<li>Robust Technology</li>
+	<li>High Efficiency</li>
+</ul><p>&nbsp;</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container form-position">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-8 form-container">
+        <div class="form-container-inner">
+          <div class="form-header" id="form-header" pardot-region="Form Header" data-id="61974" data-hml-enabled="1"><h3 style="text-align: center;">Download The COBALT Brochure</h3>
+
+<p>&nbsp;</p></div>
+          <!-- Load the Pardot form -->
+          <form accept-charset="UTF-8" method="post" action="https://go.surgicallycleanair.com/sca-dental" class="form" id="pardot-form">
+
+<style type="text/css">
+form.form p label { color: #000000; }
+</style><p class="form-field  first_name pd-text required    ">
+				
+					<label class="field-label" for="1007272_452073pi_1007272_452073">First Name</label>
+				
+
+				<input type="text" name="1007272_452073pi_1007272_452073" id="1007272_452073pi_1007272_452073" value="" class="text" size="30" maxlength="40" onchange="" onfocus=""></p>
+			<div id="error_for_1007272_452073pi_1007272_452073" style="display:none"></div>
+			
+		
+			<p class="form-field  last_name pd-text required    ">
+				
+					<label class="field-label" for="1007272_452076pi_1007272_452076">Last Name</label>
+				
+
+				<input type="text" name="1007272_452076pi_1007272_452076" id="1007272_452076pi_1007272_452076" value="" class="text" size="30" maxlength="80" onchange="" onfocus=""></p>
+			<div id="error_for_1007272_452076pi_1007272_452076" style="display:none"></div>
+			
+		
+			<p class="form-field  email pd-text required    ">
+				
+					<label class="field-label" for="1007272_452079pi_1007272_452079">Email</label>
+				
+
+				<input type="text" name="1007272_452079pi_1007272_452079" id="1007272_452079pi_1007272_452079" value="" class="text" size="30" maxlength="255" onchange="" onfocus=""></p>
+			<div id="error_for_1007272_452079pi_1007272_452079" style="display:none"></div>
+			
+		
+			<p class="form-field  company pd-text required    ">
+				
+					<label class="field-label" for="1007272_452082pi_1007272_452082">Practice Name</label>
+				
+
+				<input type="text" name="1007272_452082pi_1007272_452082" id="1007272_452082pi_1007272_452082" value="" class="text" size="30" maxlength="255" onchange="" onfocus=""></p>
+			<div id="error_for_1007272_452082pi_1007272_452082" style="display:none"></div>
+			
+		
+
+		
+	<p style="position:absolute; width:190px; left:-9999px; top: -9999px;visibility:hidden;">
+		<label for="pi_extra_field">Comments</label>
+		<input type="text" name="pi_extra_field" id="pi_extra_field"></p>
+		
+
+		<!-- forces IE5-8 to correctly submit UTF8 content  -->
+		<input name="_utf8" type="hidden" value="&#9731;"><p class="submit">
+			<input type="submit" accesskey="s" value="Submit"></p>
+	
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+	var anchors = document.getElementsByTagName("a");
+	for (var i=0; i<anchors.length; i++) {
+		var anchor = anchors[i];
+		if(anchor.getAttribute("href")&&!anchor.getAttribute("target")) {
+			anchor.target = "_top";
+		}
+	}
+		
+//]]>
+</script><input type="hidden" name="hiddenDependentFields" id="hiddenDependentFields" value=""></form>
+<script type="text/javascript">(function(){ pardot.$(document).ready(function(){ (function() {
+	var $ = window.pardot.$;
+	window.pardot.FormDependencyMap = [];
+
+	$('.form-field-primary input, .form-field-primary select').each(function(index, input) {
+		$(input).on('change', window.piAjax.checkForDependentField);
+		window.piAjax.checkForDependentField.call(input);
+	});
+})(); });})();</script></div>
+      </div>
+    </div>
+  </div>
+ <div class="page-body">
+  <div class="container">
+    <div class="row">
+      <!-- Column for Text -->
+      <div class="col-md-6" id="main-content" pardot-region="Main Content" data-id="61980" data-hml-enabled="1"><h2>Problems Dentists Across America Are Facing Today</h2>
+
+<p>1. Shortage of Staff</p>
+
+<p style="margin-left: 40px;">Retaining key staff members is becoming increasingly difficult.</p>
+
+<p>2. Dental Tools</p>
+
+<p style="margin-left: 40px;">Dental tools like Ultrasonic scalers, hygiene, and high-speed instruments create toxic aerosols that are damaging to staff and patients health.&nbsp;</p>
+
+<h2>Benefits of Surgically Clean Air Solutions:</h2>
+
+<p><strong>Enhanced Employee Health:&nbsp;</strong>&nbsp;COBALT significantly reduce exposure to harmful aerosols, leading to fewer sick days and improved overall well-being for your staff.&nbsp;</p>
+
+<p><strong>Improved Staff Retention:&nbsp;</strong>Providing a safe and healthy work environment demonstrates your commitment to the welfare of your team, fostering loyalty and long-term retention.&nbsp;</p>
+
+<p><strong>Safer Work Environment:&nbsp;</strong>SCA solutions offer comprehensive protection for you, your staff, and your patients, ensuring peace of mind and mitigating potential health risks.&nbsp;</p>
+
+<p><strong>Enhanced Reputation:&nbsp;</strong>By prioritizing workplace safety and investing in SCA technology, you position your practice as a leader in the industry, attracting patients and referrals who value safety and quality care.&nbsp;</p></div>
+      <!-- Column for Image -->
+      <div class="col-md-6">
+        <img src="URL_TO_YOUR_IMAGE" alt="Descriptive Text for Image" class="img-responsive"></div>
+    </div>
+  </div>
+</div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 copyright" id="footer" pardot-region="Footer">
+          &copy; Surgically Clean Air Inc.<br></div>
+        
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script><script type="text/javascript">
+      if($(window).width() > 768){
+          $('.form-position').appendTo('#insert-form');
+        }
+  </script></body></html>
