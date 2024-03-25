@@ -2,6 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    /* ---- Page Options ---- */
+    --hero-bg-color: #2170AF; /* Lighter Blue */
+    --page-bg-color: #F2F3F4; /* Light Gray for Page Background */
+    --footer-bg-color: #FFF; /* Keeping footer white for contrast */
+
+    /* ---- Main text options ---- */
+    --main-text-color: #5D6D7E; /* Darker Gray for Text */
+    --main-font-family: 'Poppins', sans-serif;
+    --main-text-font-size: 16px;
+    --main-text-line-height: 28px;
+
+
+    /* ---- Header text options ---- */
+    --heading-font-family: 'Sintony', sans-serif;;
+    --heading-1-text-color: #2170AF; /* Lighter Blue for Heading 1 */
+    --heading-1-text-size: 35px;
+    --heading-1-line-height: 45px;
+    --heading-2-text-color: #2170AF; /* Lighter Blue for Heading 2, adjust if needed */
+    --heading-2-text-size: 25px;
+    --heading-2-line-height: 35px;
+    --heading-3-text-color: #FFF; /* Keeping white for contrast */
+    --heading-3-text-size: 20px;
+    --heading-3-line-height: 28px;
+
+
+    /* ---- Form options ---- */
+    --form-bg-color: #FFF; /* White Background for Form */
+    --form-header-bg-color: #5D6D7E; /* Lighter Blue for Form Header */
+
+    /* input field settings */
+    --form-input-fields-bg-color: #FFF; /* White Background for Input Fields */
+    --form-input-fields-border-color: #BFC9CA; /* Light Gray for Input Field Borders */
+    --form-input-fields-text-color: #5D6D7E; /* Darker Gray for Input Text */
+
+    /* submit button settings */
+    --form-submit-button-bg-color: #2170AF; /* Lighter Blue for Submit Button */
+    --form-submit-button-font-color: #FFF; /* White Text for Button */
+    --form-submit-button-font-size: 16px;
+
+    /* checkbox settings */
+    --form-checkbox-bg-color: #2170AF; /* Lighter Blue for Checkbox */
+    --form-checkbox-border-color: #2170AF; /* Lighter Blue for Checkbox Border */
+
+    /* radio button settings */
+    --form-radio-circle-color: #2170AF; /* Lighter Blue for Radio Circle */
+    --form-radio-border-color: #2170AF; /* Lighter Blue for Radio Border */
+
+    /* field label settings */
+    --form-label-text-color: #5D6D7E; /* Darker Gray for Label Text */
+    --form-labels-text-size: 15px;
+}
 
 /* Pardot Form Styles */
 #pardot-form {
