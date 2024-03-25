@@ -640,6 +640,10 @@
             height: 200px;
         }
 
+        .h-\[150px\] {
+            height: 150px;
+        }
+
         .w-\[45\%\] {
             width: 45%;
         }
@@ -668,6 +672,10 @@
             flex-shrink: 0;
         }
 
+        .flex-shrink {
+            flex-shrink: 1;
+        }
+
         .flex-grow {
             flex-grow: 1;
         }
@@ -678,6 +686,12 @@
 
         .border-collapse {
             border-collapse: collapse;
+        }
+
+        .scale-\[1\.1\] {
+            --tw-scale-x: 1.1;
+            --tw-scale-y: 1.1;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
         }
 
         .transform {
@@ -706,6 +720,10 @@
 
         .flex-wrap {
             flex-wrap: wrap;
+        }
+
+        .flex-nowrap {
+            flex-wrap: nowrap;
         }
 
         .items-center {
@@ -807,6 +825,26 @@
             background-color: rgb(255 255 255 / var(--tw-bg-opacity));
         }
 
+        .bg-\[\#183951\] {
+            --tw-bg-opacity: 1;
+            background-color: rgb(24 57 81 / var(--tw-bg-opacity));
+        }
+
+        .bg-\[\#999999\] {
+            --tw-bg-opacity: 1;
+            background-color: rgb(153 153 153 / var(--tw-bg-opacity));
+        }
+
+        .object-contain {
+            -o-object-fit: contain;
+            object-fit: contain;
+        }
+
+        .object-cover {
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
         .p-2 {
             padding: 0.5rem;
         }
@@ -856,6 +894,16 @@
             padding-right: 3rem;
         }
 
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .px-6 {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
         .text-center {
             text-align: center;
         }
@@ -888,6 +936,14 @@
         .text-xl {
             font-size: 1.25rem;
             line-height: 1.75rem;
+        }
+
+        .text-\[30px\] {
+            font-size: 30px;
+        }
+
+        .text-\[35px\] {
+            font-size: 35px;
         }
 
         .font-\[500\] {
@@ -942,6 +998,12 @@
         .group:hover .group-hover\:scale-\[1\.1\] {
             --tw-scale-x: 1.1;
             --tw-scale-y: 1.1;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }
+
+        .group:hover .group-hover\:scale-\[1\.2\] {
+            --tw-scale-x: 1.2;
+            --tw-scale-y: 1.2;
             transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
         }
 
@@ -1014,6 +1076,10 @@
                 padding-top: 0.5rem;
                 padding-bottom: 0.5rem;
             }
+
+            .lg\:text-\[50px\] {
+                font-size: 50px;
+            }
         }
     </style>
 
@@ -1070,15 +1136,22 @@
         </div>
     </div>
 
-    <div class="w-full bg-[#363636] text-center p-24">
-        <h2 class="font-[700] text-[50px] text-white ">Let the JADE clear the air for you.</h2>
+    <div class="w-full bg-[#363636] text-center p-12">
+        <h2 class="font-[700] text-[30px] lg:text-[50px] text-white ">Let the JADE clear the air for you.</h2>
+    </div>
+
+    <!--   form section
+        %%content%%
+    -->
+    <div class="w-full flex justify-center flex-col items-center gap-6 p-6">
+        %%content%%
     </div>
 
     <div class="w-full flex justify-center flex-col items-center gap-6 p-6">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
 
-            <div class="w-full h-auto sm:h-[280px] sm:w-[550px] relative overflow-hidden group">
-                <img class="w-full h-auto group-hover:scale-[1.1] ease-in-out transition-all duration-[2s] " src="https://surgicallycleanair.com/wp-content/uploads/2023/08/AdobeStock_233210436.jpg" alt="Allergies"/>
+            <div class="h-[150px] sm:h-[280px] w-auto relative overflow-hidden group">
+                <img class="w-full h-auto  group-hover:scale-[1.1] ease-in-out transition-all duration-[2s] " src="https://surgicallycleanair.com/wp-content/uploads/2023/08/AdobeStock_233210436.jpg" alt="Allergies"/>
                 <div class=" absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black/50 pointer-events-none">
                     <h2 class="text-white font-[700] text-[22px]">
                         Allergies
@@ -1086,18 +1159,18 @@
                 </div>
             </div>
 
-            <div class="w-full h-auto sm:h-[280px] sm:w-[550px] relative overflow-hidden group">
+            <div class="h-[150px] sm:h-[280px] w-auto relative overflow-hidden group">
 
-                <img class="w-auto h-full group-hover:scale-[1.1] ease-in-out transition-all duration-[2s] " src="https://raw.githubusercontent.com/darkocejkov/sca/main/src/landing%20pages/jade/assets/Wildfire-Img-4.png" alt="Wildfire Smoke"/>
+                <img class="w-full h-auto group-hover:scale-[1.1] ease-in-out transition-all duration-[2s] " src="https://surgicallycleanair.com/wp-content/uploads/2023/08/Wildfire-Img-4.png" alt="Wildfire Smoke"/>
 
-                <div class=" absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black/50 pointer-events-none">
+                <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black/50 pointer-events-none">
                     <h2 class="text-white font-[700] text-[22px]">
                         Wildfire Smoke
                     </h2>
                 </div>
             </div>
 
-            <div class="w-full h-auto sm:h-[280px] sm:w-[550px] relative overflow-hidden group">
+            <div class="h-[150px] sm:h-[280px] w-auto relative overflow-hidden group">
                 <img class="w-full h-auto group-hover:scale-[1.1] ease-in-out transition-all duration-[2s] " src="https://surgicallycleanair.com/wp-content/uploads/2023/08/AdobeStock_111678108.jpg" alt="Mold"/>
                 <div class=" absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black/50 pointer-events-none">
                     <h2 class="text-white font-[700] text-[22px]">
@@ -1106,7 +1179,7 @@
                 </div>
             </div>
 
-            <div class="w-full h-auto sm:h-[280px] sm:w-[550px] relative overflow-hidden group">
+            <div class="h-[150px] sm:h-[280px] w-auto relative overflow-hidden group">
                 <img class="w-full h-auto group-hover:scale-[1.1] ease-in-out transition-all duration-[2s] " src="https://surgicallycleanair.com/wp-content/uploads/2023/08/AdobeStock_7601.jpg" alt="Viruses"/>
                 <div class=" absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black/50 pointer-events-none">
                     <h2 class="text-white font-[700] text-[22px]">
@@ -1122,7 +1195,27 @@
 
 
     <div class="w-full bg-[#363636] text-center py-24 p-6">
-        <h2 class="font-[700] text-[50px] text-white ">Used and Trusted by the Best</h2>
+        <h2 class="font-[700] text-[40px] lg:text-[50px] text-white ">Used and Trusted by the Best</h2>
+    </div>
+
+
+
+    <!--
+        add logos
+
+        Coca-cola, Lockheed Martin, iniversity of michigan, the diamond face intsitute, uni of louisville, uni of detroit mercy, uconn, tufts uni, Florida state university
+    -->
+
+    <div class="p-6 flex justify-center md:flex-row flex-wrap items-center gap-6">
+        <img src="https://surgicallycleanair.com/wp-content/uploads/elementor/thumbs/Coca-Cola-pji3ub8vzgcbwukuycqx2hqt0447qmfz8x3kax9ym0.jpg"/>
+        <img src="https://surgicallycleanair.com/wp-content/uploads/elementor/thumbs/Lockheed-Martin-Logo-pl03k7t2dxcby1kuhyj81tl497nclrzsfl96ku9raw.png"/>
+        <img src="https://surgicallycleanair.com/wp-content/uploads/elementor/thumbs/University_of_Michigan-pji4896pczfg4mbrjdpp1z2y7ve7wzsn5xgukolqbc.jpg"/>
+        <img src="https://surgicallycleanair.com/wp-content/uploads/elementor/thumbs/University-of-Louisville-pji485fclnaau6h85c36s013ubwr27dpteuwnkrb08.jpg"/>
+        <img src="https://surgicallycleanair.com/wp-content/uploads/elementor/thumbs/University-of-Detroit-Mercy-pji484hiet90ikilatok7i9n8y1dui9zha7f6asp6g.jpg"/>
+        <img src="https://surgicallycleanair.com/wp-content/uploads/elementor/thumbs/JasonDiamond-pji4kh367g5n24ks6nv3gw2o875zzcb0ues366hhfc.jpg"/>
+        <img src="https://surgicallycleanair.com/wp-content/uploads/elementor/thumbs/Tufts-University-pji482lu156fvclblsvb2iqq26anf42it0wg7qvhiw.jpg"/>
+        <img src="https://surgicallycleanair.com/wp-content/uploads/elementor/thumbs/FSU-140-prmizif9tbk3fx1wac095x01wtqm8hnlrwe1ek077c.png"/>
+        <img src="https://surgicallycleanair.com/wp-content/uploads/elementor/thumbs/University-of-connecticut-pji483jo7z7q6yjygb9xn0i6nk60mt6955jxp0u3co.jpg"/>
     </div>
 
     <div class="w-full flex flex-col justify-center items-center gap-12 py-12">
@@ -1141,18 +1234,22 @@
         </div>
     </div>
 
-    <div class="w-full bg-[#363636] flex flex-col lg:flex-row justify-center items-center gap-24 p-6">
-
-        <div class="text-center">
-            <h2 class="font-[700] text-[40px] text-white ">Clean Air Reimagined</h2>
+    <div class=" w-full bg-[#363636] flex flex-row justify-center items-center flex-wrap lg:flex-nowrap">
+        <div class="flex flex-col justify-center items-center gap-10 py-12 px-6">
+            <h4 class="text-3xl font-poppins text-center font-[700] text-white">
+                Ceiling Integrated Air Purification System the Cobalt!
+            </h4>
+            <a class="text-white bg-[#999999] p-2 px-6" href="https://surgicallycleanair.com/product/cobalt/" target="_blank">
+                Learn More
+            </a>
         </div>
-        <img class="w-auto md:h-[700px]" src="https://surgicallycleanair.com/wp-content/uploads/2023/08/JADE2.0-Residental-Lifestyle-square-1024x1024.png"/>
-
+        <div class="p-4">
+            <img src="./assets/COBALT_Ceiling_1_1.png" alt="Jade 2"/>
+        </div>
     </div>
 
     <div class="w-full flex justify-center items-center gap-24 p-6">
         <img alt="Awards" class="" src="https://surgicallycleanair.com/wp-content/uploads/2023/10/Awards-Banner-2023-1024x58.png"/>
-
     </div>
 
 
