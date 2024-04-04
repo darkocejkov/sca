@@ -1,8 +1,11 @@
 {
   "scripts": {
+    "tw": "npx tailwindcss -i ./styles/tailwind.css -o ./styles/output.css --watch",
+    "builder": "node builder.js ",
     "build": "npx tailwindcss -i ./styles/tailwind.css -o ./styles/output.css --watch"
   },
   "devDependencies": {
+    "minimist": "^1.2.8",
     "tailwindcss": "^3.4.1"
   }
 }
